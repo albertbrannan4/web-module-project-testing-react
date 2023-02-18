@@ -4,7 +4,6 @@ const Episode = (props) => {
   const { episode } = props;
   const { id, image, name, season, number, summary, runtime } = episode;
   const imgsrc = image || "https://i.ibb.co/2FsfXqM/stranger-things.png";
-  const a = 5;
 
   console.log("episode: ", episode);
 
