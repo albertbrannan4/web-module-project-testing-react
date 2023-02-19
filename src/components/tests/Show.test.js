@@ -49,7 +49,7 @@ test("handleSelect is called when an season is selected", () => {
 
   const select = screen.getByLabelText(/Select A Season/i);
   fireEvent.change(select, { target: { value: "1" } });
-  expect(handleSelect).toBeCalledTimes(1);
+  expect(handleSelect).toHaveBeenCalledTimes(1);
 });
 
 // test('component renders when no seasons are selected and when rerenders with a season passed in', () => { });
